@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Priority?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatapp.ClientController" style="-fx-background-color: #2c3e50; -fx-padding: 10;">
+    <ScrollPane fitToHeight="true" fitToWidth="true" style="-fx-background: #2c3e50;">
+        <VBox fx:id="messageContainer" spacing="10" style="-fx-padding: 10;">
+            <!-- Placeholder for messages -->
+        </VBox>
+    </ScrollPane>
+    <HBox spacing="10" style="-fx-padding: 10;">
+        <TextField fx:id="txtName" promptText="Name" style="-fx-background-color: #34495e; -fx-text-fill: white;"/>
+        <TextField fx:id="txtInput" promptText="New message" HBox.hgrow="ALWAYS" style="-fx-background-color: #34495e; -fx-text-fill: white;"/>
+        <Button text="Send" onAction="#sendMessage" style="-fx-background-color: #2980b9; -fx-text-fill: white;"/>
+    </HBox>
+</VBox>
